@@ -20,6 +20,10 @@ warm red:FF6B6B
   --warm-red: #ff6b6b;
 }
 
+html{
+    font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,10 +34,10 @@ warm red:FF6B6B
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7rem;
   /* color: var(--dark--green); */
-  padding: 30px;
+  padding: 3rem;
 }
 
 .header {
@@ -51,13 +55,13 @@ body {
 
 .logo-box{
     position: absolute;
-    top:40px;
-    left: 40px;
+    top:4rem;
+    left: 4rem;
 }
 
 
 .logo-box i {
-    font-size: 32px;
+    font-size: 3.2rem;
     color:var(--light-green);
     background-color: transparent;
 }
@@ -83,19 +87,19 @@ body {
 
 .heading-primary-main{
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 30px;
-    line-height: 60px;
+    letter-spacing: 3rem;
+    line-height: 6rem;
     animation: mobveInLeft 1s ease 0.3s;
  
 }
 
 .heading-primary-sub{
     display: block;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
     animation: moveInRight 1s ease 0.3s;
 
 }
@@ -136,7 +140,7 @@ body {
 .btn:link, btn:visited{
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 100px;
     transition:all 0.3s ;
