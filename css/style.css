@@ -24,11 +24,13 @@ html{
     /*  default fone size of browser 16px -> conver to 10px as 62.5%*/
     font-size: 62.5%;
 }
-
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+  
   /* background-color: var(--light-green); */
 }
 
@@ -37,8 +39,8 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  /* color: var(--dark--green); */
   padding: 3rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -54,20 +56,20 @@ body {
   position: relative;
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top:4rem;
     left: 4rem;
 }
 
 
-.logo-box i {
+.header__logo-box i {
     font-size: 3.2rem;
     color:var(--light-green);
     background-color: transparent;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top:40%;
     left:50%;
@@ -86,7 +88,7 @@ body {
     
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -96,7 +98,7 @@ body {
  
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
     font-size: 1.6rem;
     font-weight: 400;
@@ -179,7 +181,7 @@ body {
     transition: all .4s;
 }
 
-.btn-white{
+.btn--white{
     background-color: var(--light-yellow);
 }
 .btn:hover::after{
@@ -187,7 +189,7 @@ body {
     opacity: 0;
 }
 
-.btn-animate{
+.btn--animated{
     animation: moveInBottom .5s ease-out .5s;
     animation-fill-mode: backwards;
 }
