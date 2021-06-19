@@ -21,7 +21,8 @@ warm red:FF6B6B
 }
 
 html{
-    font-size: 10px;
+    /*  default fone size of browser 16px -> conver to 10px as 62.5%*/
+    font-size: 62.5%;
 }
 
 * {
@@ -81,7 +82,7 @@ body {
     text-transform: uppercase;
        /* fix animation glitch */
        backface-visibility: hidden; 
-       margin-bottom: 20px;
+       margin-bottom: 5rem;
     
 }
 
@@ -142,7 +143,7 @@ body {
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition:all 0.3s ;
     position: relative;
     
@@ -150,13 +151,13 @@ body {
 
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(255,255,255,.0.6);
+    box-shadow: 0 1rem 2rem rgba(255,255,255,.0.6);
     
 }
 
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 5px 1px rgba(255,255,255,.0.6);
+    box-shadow: 0 .5rem .1rem rgba(255,255,255,.0.6);
 }
 
 .btn-white{
@@ -169,7 +170,7 @@ body {
     display: inline-block;
     height:100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     background-color:var(--light-yellow);
     top:0;
