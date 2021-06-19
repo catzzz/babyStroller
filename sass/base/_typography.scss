@@ -1,0 +1,24 @@
+.heading-primary {
+  color: $light-green;
+  text-transform: uppercase;
+  /* fix animation glitch */
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+  //.heading-primary--main
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3rem;
+    line-height: 6rem;
+    animation: mobveInLeft 1s ease 0.3s;
+  }
+  //.heading-primary--sub
+  &--sub {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    animation: moveInRight 1s ease 0.3s;
+  }
+}
