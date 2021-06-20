@@ -3,13 +3,12 @@
     // for firefox to use -moz
     -moz-perspective: 150rem; 
     position: relative;
-    // height: 50rem;
+    height: 60rem;
     
     &__side{
-        background-color:orange;
-        color:white;
+    
         font-size: 2rem;
-        height: 50rem;
+        height: 60rem;
 
         transition: all .9s ;
         position: absolute;
@@ -43,5 +42,53 @@
     &:hover &__side--back{
         transform: rotateY(0); 
        
+    }
+
+    // Fornt side styling
+    &__picture{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+        height: 50%;
+        &--1{
+            background-image: url("../images/babystroller-1.jpeg");
+            
+        }
+        &--1{
+            background-image: url("../images/babystroller-1.jpeg");
+        }
+        &--1{
+            background-image: url("../images/babystroller-1.jpeg");
+        }
+
+
+    }
+    &__heading{
+        font-size: 2.4rem;
+        font-weight: 400;
+        // text-transform: uppercase;
+        color: $warm-red;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    &__details{
+        padding:0 2rem;
+        ul{
+            list-style: none;
+            width: 90%;
+            margin: 0 auto;
+            li{
+                color: $orange;
+                font-size:  1.5rem;
+                padding: 1rem;
+                &:not(:last-child){
+                    border-bottom:  1px solid $light-yellow;
+                }
+            }
+           
+
+          
+        }
     }
 }

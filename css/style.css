@@ -226,12 +226,11 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative; }
+  position: relative;
+  height: 60rem; }
   .card__side {
-    background-color: orange;
-    color: white;
     font-size: 2rem;
-    height: 50rem;
+    height: 60rem;
     transition: all .9s;
     position: absolute;
     top: 0;
@@ -251,6 +250,35 @@ body {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__picture {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50%; }
+    .card__picture--1 {
+      background-image: url("../images/babystroller-1.jpeg"); }
+    .card__picture--1 {
+      background-image: url("../images/babystroller-1.jpeg"); }
+    .card__picture--1 {
+      background-image: url("../images/babystroller-1.jpeg"); }
+  .card__heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #ff6b6b;
+    text-align: center;
+    line-height: 3rem; }
+  .card__details {
+    padding: 0 2rem; }
+    .card__details ul {
+      list-style: none;
+      width: 90%;
+      margin: 0 auto; }
+      .card__details ul li {
+        color: #fb8500;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #ffe66d; }
 
 .header {
   height: 95vh;
