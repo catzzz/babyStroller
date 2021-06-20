@@ -1,9 +1,10 @@
 .row {
   max-width: $grid-width;
-  background-color: $light-yellow;
+//   background-color: $light-yellow;
   margin: 0 auto;
 
   // everything except last
+  border:1px solid red;
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
@@ -14,7 +15,7 @@
   // * all
   // $ end
   [class^="col-"] {
-    background-color: orange;
+    // background-color: orange;
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
