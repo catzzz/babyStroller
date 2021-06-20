@@ -41,13 +41,16 @@
 }
 
 .heading-tertiary{
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
+    color:$dark--green;
     text-transform: uppercase;
 }
 
 .paragraph{
     font-size: 1.6rem;
+    line-height: 2rem;
+    color:$dark--green;
     &:not(:last-child){
         margin-bottom: 3rem;
     }

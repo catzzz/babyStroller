@@ -8,13 +8,14 @@
     transition: transform .3s;
 
     &__icon{
-        font-size: 6rem;
+        font-size: 5rem;
         margin-bottom:.5rem;
         display: inline-block;
         background-image: linear-gradient(to right,  $dark--green, black);
         -webkit-background-clip: text;
         background-clip:text;
         color:transparent;
+        margin-bottom: 1.5rem;
 
       
     }

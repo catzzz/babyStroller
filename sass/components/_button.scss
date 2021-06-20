@@ -54,19 +54,22 @@
   .btn-text{
       &:link,
       &:visited{
-        font-size: $default-dont-size;
+        font-size: 2rem;
         color:$dark--green;
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid $dark--green;
-        padding: 10px;
+        padding: 1.5rem 2rem;
+        
       }
 
       &:hover{
         background-color: $dark--green;
+        border-radius: 10rem;
         color:white;
         box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
         transform:translateY(-2px);
+        
       }
       &:active{
         box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
