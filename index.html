@@ -27,18 +27,18 @@
         <div class="navigation__background">&nbsp</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="" class="navigation__link">About us</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Features</a</li>
-                <li class="navigation__item"><a href="" class="navigation__link">Popular products</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Testimonial</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Contact us</a></li>
+                <li class="navigation__item"><a href="#header" class="navigation__link">About us</a></li>
+                <li class="navigation__item"><a href="#section-feature" class="navigation__link">Features</a</li>
+                <li class="navigation__item"><a href="#section-product" class="navigation__link">Popular products</a></li>
+                <li class="navigation__item"><a href="#section-stories" class="navigation__link">Testimonial</a></li>
+                <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact us</a></li>
             </ul>
         </nav>
     </div>
     <!-- navigation end -->
 
     <!-- Header start -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__logo-box">
             <i class="fas fa-baby-carriage"></i>
         </div>
@@ -47,7 +47,7 @@
                 <span class="heading-primary--main">Strollers</span>
                 <span class="heading-primary--sub">carry the most precious treasure in the world </span>
             </h1>
-            <a href="" class="btn btn--white btn--animated">Discover our product</a>
+            <a href="#section-product" class="btn btn--white btn--animated">Discover our product</a>
         </div>
 
     </header>
@@ -100,7 +100,7 @@
     <!-- About end -->
 
     <!-- Features start -->
-    <section class="section-features">
+    <section class="section-features" id="section-features">
 
         <div class="row">
             <div class="col-1-of-4">
@@ -155,7 +155,7 @@
     <!-- Features end -->
 
     <!-- section product start -->
-    <section class="section-product">
+    <section class="section-product" id="section-product">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
                 Most popular strollers
@@ -189,7 +189,7 @@
                                 <p class="card__price-only u-margin-bottom-big">Only</p>
                                 <p class="card__price-value">$197</p>
                             </div>
-                            <a href="#" class="btn btn--white">Buy now!</a>
+                            <a href="#popup" class="btn btn--white">Buy now!</a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                                 <p class="card__price-only u-margin-bottom-big">Only</p>
                                 <p class="card__price-value">$247</p>
                             </div>
-                            <a href="#" class="btn btn--green">Buy now!</a>
+                            <a href="#popup" class="btn btn--green">Buy now!</a>
                         </div>
                     </div>
                 </div>
@@ -261,7 +261,7 @@
                                 <p class="card__price-only u-margin-bottom-big">Only</p>
                                 <p class="card__price-value">$299</p>
                             </div>
-                            <a href="#" class="btn btn--blue">Buy now!</a>
+                            <a href="#popup" class="btn btn--blue">Buy now!</a>
                         </div>
                     </div>
                 </div>
@@ -277,7 +277,7 @@
     <!-- section product end -->
 
     <!-- section stories start-->
-    <section class="setcion-stories">
+    <section class="setcion-stories" id="section-stories">
         <div class="bg-video">
             <video class="bg-video__content" autoplay muted loop>
                 <source src="images/video.mp4" type="video/mp4" />
@@ -369,7 +369,7 @@
     <!-- section stories end -->
 
     <!-- section contact start-->
-    <div class="section-contact">
+    <div class="section-contact" id="section-contact">
         <div class="row">
             <div class="contact">
                 <div class="contact__form">
@@ -411,7 +411,7 @@
 
     <!-- footer start -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__logo-box">
             <i class="fas fa-baby-carriage footer__logo"></i>
         </div>
@@ -438,13 +438,14 @@
     <!-- footer end -->
 
     <!--  popup start -->
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
                 <img src="https://images.unsplash.com/photo-1561857283-66d55899ed56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="photo" class="popup__img">
                 <img src="https://images.unsplash.com/photo-1528121108018-743eef2e4a7a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="photo" class="popup__img">
             </div>
             <div class="popup__right">
+                <a href="#section-feature" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-medium">Place order now</h2>
                 <h3 class="heading-tertiary u-margin-bottom-samll">Import &ndash; Please read these terms before booking</h3>
                 <p class="popup__text">
