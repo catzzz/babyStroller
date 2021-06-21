@@ -31,6 +31,13 @@
             &-1 {
                 background-image:linear-gradient(to right bottom,$light-yellow,$orange);
             }
+            &-2 {
+               
+                background-image:linear-gradient(to right bottom,$medium-green,$dark--green);
+            }
+            &-3 {
+                background-image:linear-gradient(to right bottom,$medium-blue,$dark-blue);
+            }
         }
       
     }
@@ -54,11 +61,11 @@
             background-image: url("../images/babystroller-1.jpeg");
             
         }
-        &--1{
-            background-image: url("../images/babystroller-1.jpeg");
+        &--2{
+            background-image: url("../images/babystroller-2.png");
         }
-        &--1{
-            background-image: url("../images/babystroller-1.jpeg");
+        &--3{
+            background-image: url("../images/babystroller-3.jpeg");
         }
 
 
@@ -67,7 +74,7 @@
         font-size: 2.4rem;
         font-weight: 400;
         // text-transform: uppercase;
-        color: $warm-red;
+        color: $dark--green;
         text-align: center;
         line-height: 3rem;
     }
@@ -79,11 +86,11 @@
             width: 90%;
             margin: 0 auto;
             li{
-                color: $warm-red;
+                color: $dark--green;
                 font-size:  1.5rem;
                 padding: 1rem;
                 &:not(:last-child){
-                    border-bottom:  1px solid $light-yellow;
+                    border-bottom:  1px solid $medium-green;
                 }
             }
            

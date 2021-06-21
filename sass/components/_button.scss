@@ -24,6 +24,15 @@
       background-color: $light-yellow;
       color: $dark--green;
     }
+    &--green {
+        background-color: $light-green;
+        color: $dark--green;
+      }
+
+      &--blue {
+        background-color: $medium-blue;
+        color: $dark-blue;
+      }
     
     &::after {
       content: "";
@@ -32,7 +41,7 @@
       width: 100%;
       border-radius: 10rem;
       position: absolute;
-      background-color: $light-yellow;
+      background-color: inherit;
       top: 0;
       left: 0;
       z-index: -1;

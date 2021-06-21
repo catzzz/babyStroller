@@ -139,6 +139,14 @@ body {
   background-color: #ffe66d;
   color: #1a535c; }
 
+.btn--green {
+  background-color: #f7fff7;
+  color: #1a535c; }
+
+.btn--blue {
+  background-color: #bde0fe;
+  color: #4895ef; }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -146,7 +154,7 @@ body {
   width: 100%;
   border-radius: 10rem;
   position: absolute;
-  background-color: #ffe66d;
+  background-color: inherit;
   top: 0;
   left: 0;
   z-index: -1;
@@ -246,6 +254,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffe66d, #fb8500); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #4ecdc4, #1a535c); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #bde0fe, #4895ef); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
@@ -257,14 +269,14 @@ body {
     height: 50%; }
     .card__picture--1 {
       background-image: url("../images/babystroller-1.jpeg"); }
-    .card__picture--1 {
-      background-image: url("../images/babystroller-1.jpeg"); }
-    .card__picture--1 {
-      background-image: url("../images/babystroller-1.jpeg"); }
+    .card__picture--2 {
+      background-image: url("../images/babystroller-2.png"); }
+    .card__picture--3 {
+      background-image: url("../images/babystroller-3.jpeg"); }
   .card__heading {
     font-size: 2.4rem;
     font-weight: 400;
-    color: #ff6b6b;
+    color: #1a535c;
     text-align: center;
     line-height: 3rem; }
   .card__details {
@@ -274,11 +286,11 @@ body {
       width: 90%;
       margin: 0 auto; }
       .card__details ul li {
-        color: #ff6b6b;
+        color: #1a535c;
         font-size: 1.5rem;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #ffe66d; }
+          border-bottom: 1px solid #4ecdc4; }
   .card__cta {
     position: absolute;
     top: 50%;
