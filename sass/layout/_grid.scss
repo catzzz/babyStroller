@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   // everything except last
-  border:1px solid red;
+//   border:1px solid red;
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
