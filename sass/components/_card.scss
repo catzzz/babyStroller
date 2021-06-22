@@ -59,22 +59,27 @@
         height: 50%;
         &--1{
             background-image: url("../images/babystroller-1_1x.jpg");
-            @media(min-resolution:192dpi) and (min-width:600px){
-                background-image: url("../images/babystroller-1_3x.jpg");
+
+            @media(min-resolution:192dpi) and (min-width:37.5em),
+            (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em){
                 
+                background-image: url("../images/babystroller-1_3x.jpg");
+               
             }
             
             
         }
         &--2{
             background-image: url("../images/babystroller-2_1x.jpg");
-            @media(min-resolution:192dpi) and (min-width:600px){
+            @media(min-resolution:192dpi) and (min-width:37.5em),
+            (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em){
                 background-image: url("../images/babystroller-2_2x.jpg");
             }
         }
         &--3{
             background-image: url("../images/babystroller-3_1x.jpg");
-            @media(min-resolution:192dpi) and (min-width:600px){
+            @media(min-resolution:192dpi) and (min-width:37.5em),
+            (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em){
                 background-image: url("../images/babystroller-3_3x.jpg");
             }
         }

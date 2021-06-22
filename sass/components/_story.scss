@@ -27,7 +27,12 @@
         background-color: orange;
         shape-outside: circle(50% at 50% 50%);
         
-        clip-path: circle(50% at 50% 50%);
+        
+
+        @supports(clip-path: circle(50% at 50% 50%)) or (-webkit-clip-path:circle(50% at 50% 50%)){
+            -webkit-clip-path:circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+        }
         transform:translateX(-3rem) skewX(12deg);
         overflow: hidden;
 

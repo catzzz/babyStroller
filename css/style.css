@@ -307,17 +307,17 @@ body {
     height: 50%; }
     .card__picture--1 {
       background-image: url("../images/babystroller-1_1x.jpg"); }
-      @media (min-resolution: 192dpi) and (min-width: 600px) {
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
         .card__picture--1 {
           background-image: url("../images/babystroller-1_3x.jpg"); } }
     .card__picture--2 {
       background-image: url("../images/babystroller-2_1x.jpg"); }
-      @media (min-resolution: 192dpi) and (min-width: 600px) {
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
         .card__picture--2 {
           background-image: url("../images/babystroller-2_2x.jpg"); } }
     .card__picture--3 {
       background-image: url("../images/babystroller-3_1x.jpg"); }
-      @media (min-resolution: 192dpi) and (min-width: 600px) {
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
         .card__picture--3 {
           background-image: url("../images/babystroller-3_3x.jpg"); } }
   .card__heading {
@@ -417,9 +417,12 @@ body {
     float: left;
     background-color: orange;
     shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden; }
+    @supports (clip-path: circle(50% at 50% 50%)) or (-webkit-clip-path: circle(50% at 50% 50%)) {
+      .story__shape {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); } }
     @media (max-width: 56.25em) {
       .story__shape {
         transform: translateX(-3rem) skewX(6deg); } }
@@ -564,6 +567,11 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s; }
+  @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.2); } }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -653,7 +661,7 @@ body {
         font-size: 2.0rem; } }
 
 .header {
-  height: 95vh;
+  height: 90vh;
   background-image: url("https://images.unsplash.com/photo-1516382686263-779707ed2896?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
   /* background-image: linear-gradient(to right bottom,#f7fff7c9,#4ecdc5e0),
       url("https://images.unsplash.com/photo-1487687944474-d9cf58dda287?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80"); */
@@ -662,9 +670,12 @@ body {
   background-position: bottom center;
   background-size: cover;
   margin-bottom: 5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @supports (-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
