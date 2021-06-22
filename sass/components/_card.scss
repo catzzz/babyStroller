@@ -58,14 +58,25 @@
         background-position:center;
         height: 50%;
         &--1{
-            background-image: url("../images/babystroller-1.jpeg");
+            background-image: url("../images/babystroller-1_1x.jpg");
+            @media(min-resolution:192dpi) and (min-width:600px){
+                background-image: url("../images/babystroller-1_3x.jpg");
+                
+            }
+            
             
         }
         &--2{
-            background-image: url("../images/babystroller-2.png");
+            background-image: url("../images/babystroller-2_1x.jpg");
+            @media(min-resolution:192dpi) and (min-width:600px){
+                background-image: url("../images/babystroller-2_2x.jpg");
+            }
         }
         &--3{
-            background-image: url("../images/babystroller-3.jpeg");
+            background-image: url("../images/babystroller-3_1x.jpg");
+            @media(min-resolution:192dpi) and (min-width:600px){
+                background-image: url("../images/babystroller-3_3x.jpg");
+            }
         }
 
 
@@ -93,10 +104,15 @@
                     border-bottom:  1px solid $medium-green;
                 }
             }
-           
+            
+            
 
           
         }
+        @include respond(tab-port){
+            text-align: center;
+        }
+      
     }
 
     //Front side sytle
@@ -121,5 +137,65 @@
     &__price-value{
         font-size: 6rem;
         font-weight: 300;
+    }
+
+    @include respond(tab-port){
+     
+        height: auto;
+        box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: .15);
+        &__side{
+        
+            font-size: 2rem;
+            height: 60rem;
+    
+            position: relative;
+            
+            &--front{
+                border-radius: 1rem 1rem 0 0 ;
+            }
+            
+            &--back{
+                height: 30rem;
+                transform: rotateY(0); 
+                border-radius: 0 0 1rem 1rem ;
+            }
+          
+        }
+        
+        &:hover &__side--front{
+            transform: rotateY(0); 
+           
+        }
+        &:hover &__side--back{
+            transform: rotateY(0); 
+           
+        }
+    
+    
+    
+        //Front side sytle
+        &__cta{
+            position: relative;
+            top:0%;
+            left:0%;
+            transform: translate(0);
+            width: 100%;
+            padding: 4rem;
+    
+        }
+    
+        &__price-box{
+
+            margin-bottom: 3rem;
+        }
+        &__price-only{
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        &__price-value{
+            font-size: 6rem;
+            font-weight: 300;
+        }
     }
 }

@@ -1,5 +1,6 @@
 .header {
     height: 95vh;
+    // width: 100vw;
     background-image: url("https://images.unsplash.com/photo-1516382686263-779707ed2896?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
     /* background-image: linear-gradient(to right bottom,#f7fff7c9,#4ecdc5e0),
       url("https://images.unsplash.com/photo-1487687944474-d9cf58dda287?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80"); */
@@ -7,7 +8,17 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    margin-bottom: 5rem;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    @include respond(phone){
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      
+    }
+
     position: relative;
   
     // .header__logo-box

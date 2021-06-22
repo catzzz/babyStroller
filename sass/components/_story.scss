@@ -8,6 +8,15 @@
     padding-left: 9rem;
     font-size:$default-dont-size;
     transform: skewX(-12deg);
+    @include respond(tab-port){
+        width:90%;
+        transform: skewX(-6deg);
+    }
+
+    @include respond(phone){
+        transform: skewX(-3deg);
+        width:100%;
+    }
     
 
     &__shape { 
@@ -21,6 +30,14 @@
         clip-path: circle(50% at 50% 50%);
         transform:translateX(-3rem) skewX(12deg);
         overflow: hidden;
+
+        @include respond(tab-port){
+            transform:translateX(-3rem) skewX(6deg);
+        }
+    
+        @include respond(phone){
+            transform:translateX(-3rem) skewX(3deg);
+        }
     }
 
     &__img{
@@ -32,6 +49,13 @@
 
     &__text{
         transform: skewX(12deg);  
+        @include respond(tab-port){
+            transform:skewX(6deg);
+        }
+    
+        @include respond(phone){
+            transform:skewX(3deg);
+        }
     }
 
     &__caption{
@@ -48,6 +72,7 @@
         transition: all 0.8s;
         backface-visibility: hidden;
         transition: all .3s;
+        
         
     }
     &:hover &__caption{
