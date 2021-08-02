@@ -1,86 +1,29 @@
-# Read Me Template
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+# Baby Stroller Starup
 
-![Project Image](project-image-url)
+![Landing page](/screenshots/home.png)
+![Products page](/screenshots/products.png)
+<p align="center">
+  <img src="/screenshots/responsive.png" />
+</p>
 
-> This is a ReadMe template to help save you time and effort.
 
----
-
-### Table of Contents
-You're sections headers will be used to reference location of destination.
-
-- [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
-
----
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
-
-#### Technologies
-
-- Technology 1
-- Technology 2
-
-[Back To The Top](#read-me-template)
-
----
-
-## How To Use
+  This is a websit template which was created to demostrate how to implement Sass in a web application.
 
 #### Installation
 
 
-
-#### API Reference
-
-```html
-    <p>dummy code</p>
-```
-[Back To The Top](#read-me-template)
-
----
-
-## References
-[Back To The Top](#read-me-template)
-
----
-
 ## License
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-MIT License
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
 
-Copyright (c) [2017] [James Q Quick]
+## Author 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-[Back To The Top](#read-me-template)
-
----
-
-## Author Info
-
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
-
-[Back To The Top](#read-me-template)
+- Website - [Jimmy Leu](https://jimmyleu.com)
