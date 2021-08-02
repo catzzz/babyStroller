@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font awesome  -->
     <script src="https://kit.fontawesome.com/c6e55f28ca.js" crossorigin="anonymous"></script>
-
-    <title>Start up | Sass Demo</title>
+    <link href="javascripts/main.js" rel="javascript" />
+    <title>Baby stroller start up | Sass Demo</title>
 </head>
 
 <body>
@@ -27,11 +27,11 @@
         <div class="navigation__background">&nbsp</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#header" class="navigation__link">About us</a></li>
-                <li class="navigation__item"><a href="#section-feature" class="navigation__link">Features</a</li>
-                <li class="navigation__item"><a href="#section-product" class="navigation__link">Popular products</a></li>
-                <li class="navigation__item"><a href="#section-stories" class="navigation__link">Testimonial</a></li>
-                <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact us</a></li>
+                <li class="navigation__item"><a href="#header" class="navigation__link" onclick="closeMenu()">About us</a></li>
+                <li class="navigation__item"><a href="#section-feature" class="navigation__link" onclick="closeMenu()">Features</a</li>
+                <li class="navigation__item"><a href="#section-product" class="navigation__link" onclick="closeMenu()">Popular products</a></li>
+                <li class="navigation__item"><a href="#section-stories" class="navigation__link" onclick="closeMenu()">Testimonial</a></li>
+                <li class="navigation__item"><a href="#section-contact" class="navigation__link" onclick="closeMenu()">Contact us</a></li>
             </ul>
         </nav>
     </div>
@@ -391,14 +391,7 @@
                             <label for="email" class="form__label">Email</label>
                         </div>
                         <!-- input item end -->
-                        <!-- check button -->
-                        <!-- <div class="form__radio-group">
-                            <input type="checkbox" class="form__radio-input" id="large" name="size">
-                            <label for="large" class="form__radio-label">
-                                <span class="form__radio-button"></span>
-                                Register for more information
-                            </label>
-                        </div> -->
+             
                         <div class="form__group">
                             <button class="btn btn--white">Next Step &rarr;</button>
                         </div>
@@ -440,10 +433,7 @@
     <!--  popup start -->
     <div class="popup" id="popup">
         <div class="popup__content">
-            <div class="popup__left">
-                <img src="https://images.unsplash.com/photo-1561857283-66d55899ed56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="photo" class="popup__img">
-                <img src="https://images.unsplash.com/photo-1528121108018-743eef2e4a7a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="photo" class="popup__img">
-            </div>
+
             <div class="popup__right">
                 <a href="#section-feature" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-medium">Place order now</h2>
@@ -455,87 +445,7 @@
             </div>
         </div>
     </div>
-    <!--  popup end -->
-
-    <!-- grid layout template 
-    <section class="grid-test">
-        <div class="row">
-            <div class="col-1-of-2">
-                <h3 class="heading-tertiary">What Our Experts Say</h3>
-                <p class="paragraph">
-                    The City Mini GT2 is an overwhelming Babylist parent favorite—and it’s easy to see why. This popular stroller boasts an unbeatable combination of price and performance. It’s certainly not cheap, but it won’t cost you a month’s rent, either. It’s easy to push and steer, features all-terrain forever air rubber wheels and all-wheel suspension, a near-flat seat recline and a true one-handed fold. It’s also compatible with a huge range of infant car seats if you’re looking to build your own travel system. The GT2 is perfect for city and suburban dwellers alike and can be stored in compact spaces when folded.
-                </p>
-            </div>
-            <div class="col-1-of-2">
-                <h3 class="heading-tertiary">What Babylist Parents Say</h3>
-                <p class="paragraph">
-                    “I love that I can close it one handed. I can attach the various accessories, and I like that the sunshade goes so low that it shades my baby completely.” -Lisa
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-            <div class="col-2-of-3">
-                col 2 of 3
-            </div>
-  
-        </div>
-
-
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-2-of-4">
-                Col 2 of 4
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-
-            <div class="col-3-of-4">
-                Col 3 of 4
-            </div>
-        </div>
-    </section>
-    -->
+    <script src="/javascripts/main.js"></script>
 </body>
 
 </html>
