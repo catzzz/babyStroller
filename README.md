@@ -16,7 +16,7 @@
 
   This is a websit template which was created to demostrate how to implement Sass in a web application.
 
-#### Installation
+
 
 
 ## License
