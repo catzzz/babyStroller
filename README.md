@@ -3,6 +3,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 # Baby Stroller Starup
+![Demo websit](https://catzzz.github.io/babyStroller/)
 
 ![Landing page](/screenshots/home.png)
 ![Products page](/screenshots/products.png)
